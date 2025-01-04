@@ -45,8 +45,13 @@ public class CopyAndPaste {
         action.keyUp(Keys.CONTROL);
         action.build().perform();
         //Tab
-        action.sendKeys(Keys.TAB);
-        action.build().perform();
+//        action.sendKeys(Keys.TAB);
+//        action.build().perform();
+
+        WebElement subject = driver.findElement(By.id("subjects"));
+        subject.click();
+
+
         //Paste
         action.keyDown(Keys.CONTROL);
         action.sendKeys("v");
