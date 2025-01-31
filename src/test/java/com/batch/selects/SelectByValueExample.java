@@ -28,7 +28,6 @@ public class SelectByValueExample {
 
         WebElement dropdown = driver.findElement(By.id("inputGroupSelect03"));
         Select select = new Select(dropdown);
-
         select.selectByValue("2");
 
         Thread.sleep(5000);
